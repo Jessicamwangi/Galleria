@@ -427,9 +427,7 @@ h5.modal-title{
       max-width: 150px;
       overflow: auto;
   }
-  button.btn.btn-secondary{
-      /* display: none; */
-  }
+
   h5#deleteModalLabel.modal-title{
       margin: 0px;
   }
@@ -475,9 +473,6 @@ h5.modal-title{
   input#link.form-control{
       max-width: 150px;
       overflow: auto;
-  }
-  button.btn.btn-secondary{
-      /* display: none; */
   }
   h5#deleteModalLabel.modal-title{
       margin: 0px;
