@@ -1,8 +1,20 @@
 from django.test import TestCase
 
-from .models import Image,Category,Location
+from .models import Image,Category,Location, Editor
 # Create your tests here.
 
+class EditorTestClass(TestCase):
+  #set up method
+  def setUp(self):
+    self.jessica = Editor(first_name = 'Jessica', last_name = 'Mwangi', email = 'jessica@moringaschool.com')
+  #Testing instance
+  def test_instance(self):
+    self.assertTrue(isinstance(self.jessica,Editor))
+  #Testing save method
+  def test_save_method(self):
+    self.jessica.save_editor()
+    editors = Editor.objects.all()
+    self.assertTrue(len(editors)>0)
 class LocationTestCLass(TestCase):
     #Set up Method
     def setUp(self):
