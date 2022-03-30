@@ -1,2 +1,2 @@
 release: python3 manage.py migrate
-web: gunicorn GALLERIA.wsgi --log-file=-
+web: gunicorn Galleria.wsgi --log-file=-
