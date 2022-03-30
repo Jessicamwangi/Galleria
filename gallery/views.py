@@ -1,6 +1,6 @@
 from django.http  import HttpResponse, Http404
 from django.shortcuts import render, redirect
-from .models import Image, Location, Category
+from .models import  Location, Category,Image
 
 
 # Create your views here.
